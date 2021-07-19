@@ -70,7 +70,7 @@ export default {
   }
 
   &.show {
-    z-index: 2;
+    z-index: 90;
     opacity: 1;
   }
 }

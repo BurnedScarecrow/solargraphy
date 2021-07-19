@@ -39,11 +39,11 @@ html,
 body {
   padding: 0;
   margin: 0;
+  background-image: linear-gradient(to bottom right, var(--dark), var(--gray));
   min-height: 100%;
 }
 body {
   overflow: auto;
-  background-image: linear-gradient(to bottom right, var(--dark), var(--gray));
   background-size: cover;
   background-repeat: no-repeat;
 }

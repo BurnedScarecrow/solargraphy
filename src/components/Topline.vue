@@ -1,6 +1,6 @@
 <template>
   <div class="topline">
-    <h1 class="logo"><a href="/"> Solargraphy</a></h1>
+    <h1 class="logo"><router-link to="/"> Solargraphy</router-link></h1>
     <div
       class="nav-trigger"
       :class="{ active: toggle, non_active: !toggle }"
