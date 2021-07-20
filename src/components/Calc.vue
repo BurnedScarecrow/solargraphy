@@ -161,6 +161,7 @@ export default {
     });
 
     this.map.addControl(new mapboxgl.FullscreenControl());
+    this.map.addControl(new mapboxgl.NavigationControl());
 
     this.marker = new mapboxgl.Marker({
       color: "#1f2933",

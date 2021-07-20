@@ -11,14 +11,19 @@
 <script>
 export default {
   data() {
-    return { char: "©", heart: "❤️", copy: "©" };
+    return { char: "©", copy: "©", emo: ["❤️", "🐷", "🌷"] };
   },
   mounted() {
+    let index = this.emo.length - 1;
     setInterval(() => {
-      if (this.char == this.heart) {
+      if (this.char != this.copy) {
         this.char = this.copy;
+      } else if (index == this.emo.length - 1) {
+        index = 0;
+        this.char = this.emo[index];
       } else {
-        this.char = this.heart;
+        index++;
+        this.char = this.emo[index];
       }
     }, 1000);
   },
